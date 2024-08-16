@@ -1,4 +1,6 @@
 # Homebridge Nature Remo Toggle Fan
+[![npm version](https://badge.fury.io/js/homebridge-nature-remo-toggle-fan.svg)](https://badge.fury.io/js/homebridge-nature-remo-toggle-fan)
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)  
 [Homebridge](https://github.com/homebridge/homebridge) plugin to control toggle-type fans using [Nature Remo](https://nature.global/nature-remo/).
 
 ## Installation
