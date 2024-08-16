@@ -1,0 +1,27 @@
+{
+  "private": false,
+  "displayName": "Nature Remo Toggle Fan",
+  "name": "homebridge-nature-remo-toggle-fan",
+  "version": "1.0.0",
+  "description": "Homebridge Plugin to control toggle-type fans using Nature Remo",
+  "author": "morimoTea",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/morimoTea/homebridge-nature-remo-toggle-fan.git"
+  },
+  "bugs": {
+    "url": "https://github.com/morimoTea/homebridge-nature-remo-toggle-fan/issues"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "homebridge": ">=1.5.0"
+  },
+  "main": "index.js",
+  "keywords": [
+    "homebridge-plugin"
+  ],
+  "dependencies": {
+    "node-persist": "^2.0.0"
+  }
+}

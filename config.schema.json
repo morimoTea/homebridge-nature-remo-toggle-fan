@@ -1,0 +1,47 @@
+{
+  "pluginAlias": "NatureRemoToggleFan",
+  "pluginType": "accessory",
+  "singular": false,
+  "headerDisplay": "- To obtain the Access Token, log in to https://home.nature.global/ with your Nature account\n- To obtain the Signal IDs, run the following command and look for the relevant `id` key<br>\n`curl -X GET \"https://api.nature.global/1/appliances\" -H \"Authorization: Bearer [AccessToken]\"`",
+  "schema": {
+    "type": "object",
+    "properties": {
+      "name": {
+        "title": "Name",
+        "type": "string",
+        "required": true
+      },
+      "accessToken": {
+        "title": "Access Token",
+        "type": "string",
+        "required": true
+      },
+      "powerSignal": {
+        "title": "Power Signal ID",
+        "type": "string",
+        "required": true
+      },
+      "windLevel": {
+        "title": "Wind Levels",
+        "type": "integer",
+        "default": 1,
+        "placeholder": 1,
+        "minimum": 1,
+        "description": "1 will disable the wind level control."
+      },
+      "windSignal": {
+        "title": "Wind Signal ID",
+        "type": "string",
+        "condition": {
+          "functionBody": "return model.windLevel > 1;"
+        },
+        "description": "Required if Wind Levels ≧ 2."
+      },
+      "swingSignal": {
+        "title": "Swing Signal ID",
+        "type": "string",
+        "description": "Optional."
+      }
+    }
+  }
+}
